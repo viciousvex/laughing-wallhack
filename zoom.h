@@ -16,7 +16,7 @@ class CPosition {
     char x;
     char y;
 public:
-    CPosition(char, char);
+    CPosition(char, char); // initialize X and Y
 };
 
 class CCharacter {
@@ -28,7 +28,7 @@ class CCharacter {
     char fg_color; // foreground color
 
 public:
-    CCharacter(char, char, char, char, char);
+    CCharacter(CPosition *, char, char, char);
    
 };
 
@@ -44,6 +44,12 @@ public:
 
 class CScreen {
     // The screen representation contains characters
+#define MAXX 40 // screen has 40 cols
+#define MAXY 25 // screen has 25 rows
+#define CHARWIDTH 8 // a character is 8 pixels wide
+#define CHARHIGHT 8 // a character is 8 pixels tall
+    char screen_memory[MAXY*CHARHIGHT][MAXX*CHARWIDTH];
+    
 };
 
 
