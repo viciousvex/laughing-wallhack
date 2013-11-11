@@ -47,8 +47,8 @@ class CScreen {
 #define MAXX 40 // screen has 40 cols
 #define MAXY 25 // screen has 25 rows
 #define CHARWIDTH 8 // a character is 8 pixels wide
-#define CHARHIGHT 8 // a character is 8 pixels tall
-    char screen_memory[MAXY*CHARHIGHT][MAXX*CHARWIDTH];
+#define CHARHEIGHT 8 // a character is 8 pixels tall
+    char screen_memory[MAXY*CHARHEIGHT][MAXX*CHARWIDTH];
     
 };
 
